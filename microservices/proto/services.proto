@@ -1,0 +1,9 @@
+syntax = "proto3";
+import "messages.proto";
+
+package clinical_objects;
+
+service MeasureService {
+    rpc calculateBloodPressure(BloodMeasure) returns (BloodPressure);
+    rpc calculateMeanWeight(WeightRecords) returns (WeightMeasure);
+}
