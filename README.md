@@ -4,7 +4,7 @@ This repository contains a demo of gRPC microservices which include several serv
 
 ## About gRPC
 
-![gRPC Pancakes](https://pbs.twimg.com/media/D1LHCnFUcAAKB8d.jpg =250x)
+![gRPC Pancakes](https://pbs.twimg.com/media/D1LHCnFUcAAKB8d.jpg)
 
 gRPC is a RPC Framework supported by Google and the CNCF. 
 
