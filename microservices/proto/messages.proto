@@ -23,6 +23,6 @@ message WeightRecords {
 
 message BloodPressure {
     string id = 1;
-    float measure = 2;
+    string measure = 2;
     google.protobuf.Timestamp datetime = 3;
 }
