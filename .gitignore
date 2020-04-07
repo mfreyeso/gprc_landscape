@@ -1,3 +1,3 @@
 .idea/*
 microservices/health/.idea/*
-microservices/health/service/clinical_objects/*
+microservices/health/service/clinical/*

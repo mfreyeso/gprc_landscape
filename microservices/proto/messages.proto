@@ -1,5 +1,5 @@
 syntax = "proto3";
-package clinical_objects;
+package clinical;
 
 import "google/protobuf/timestamp.proto";
 
