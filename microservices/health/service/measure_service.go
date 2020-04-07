@@ -12,10 +12,11 @@ import (
 	"google.golang.org/grpc/status"
 )
 
-type serve struct {
+type server struct {
+	pb.UnimplementedMeasureServiceServer
 }
 
-func (s *serve) CalculateBloodPressure(ctx context.Context,
+func (s *server) CalculateBloodPressure(ctx context.Context,
 	in *pb.BloodMeasure) (*pb.BloodPressure, error) {
 
 	out, err := uuid.NewV4()
@@ -25,6 +26,6 @@ func (s *serve) CalculateBloodPressure(ctx context.Context,
 	var operationId = out.String()
 	var result = in.Diastole * in.Systole
 	log.Printf("Operation %v : %v - calculated.", operationId, result)
-	return &pb.BloodPressure{Id:out.String(), Measure:result, Datetime:ptypes.TimestampNow()},
+	return &pb.BloodPressure{Id: out.String(), Measure: result, Datetime: ptypes.TimestampNow()},
 		status.New(codes.OK, "").Err()
 }

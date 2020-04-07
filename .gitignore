@@ -1,3 +1,6 @@
 .idea/*
 microservices/health/.idea/*
 microservices/health/service/clinical/*
+microservices/health/client/clinical/*
+microservices/health/client/bin
+microservices/health/service/bin
